@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: testservice
+  name: nginx-service
 spec:
-  replicas: 10
   selector:
       app: nginx
   ports:
     - port: 80
+      nodePort: 30000
   type: NodePort
