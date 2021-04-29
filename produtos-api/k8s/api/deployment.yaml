@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: api
 spec:
+  replicas: 10
   selector:
     matchLabels:
       app: api
@@ -13,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: rodriggoarantes/produto-api:v1
+          image: rodriggoarantes/produto-api:v2
           ports:
             - containerPort: 8080
           env:
