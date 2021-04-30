@@ -63,6 +63,7 @@ jobs:
       - name: Deploy WebAPI to Kubernetes
         uses: Azure/k8s-deploy@v1.3
         with:
+          images: rodriggoarantes/produto-api:${{github.run_number}}
           manifests: |
             ./produtos-api/k8s/api/deployment.yaml
           
