@@ -29,6 +29,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const serverStatus = () => {
     return {
         state: 'up',
+        version: 'v3',
         dbState: mongoose.STATES[mongoose.connection.readyState]
     }
 };

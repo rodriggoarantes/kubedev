@@ -2,7 +2,7 @@
 swagger: "2.0"
 info:
   description: "Cadastro de Produtos - API"
-  version: "1.0.2"
+  version: "1.0.3"
   title: "Cadastro de Produtos"
   contact:
     email: "rodriggoarantes@gmail.com"

@@ -11,7 +11,7 @@ router.get('/read', (req, res) => {
 
     if (isRead()) {
         res.statusCode = 200;
-        return res.send('Ok - v2');
+        return res.send('Ok');
     } else {
         res.statusCode = 500;
         return res.send('');

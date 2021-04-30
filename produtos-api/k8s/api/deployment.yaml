@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: rodriggoarantes/produto-api:v2
+          image: rodriggoarantes/produto-api
           resources:
             requests:
               memory: "32Mi"
