@@ -59,4 +59,10 @@ jobs:
           manifests: |
             ./produtos-api/k8s/db/deployment.yaml
             ./produtos-api/k8s/db/service.yaml
+            
+      - name: Deploy WebAPI to Kubernetes
+        uses: Azure/k8s-deploy@v1.3
+        with:
+          manifests: |
+            ./produtos-api/k8s/api/deployment.yaml
           
